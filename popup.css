@@ -1,0 +1,130 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #007acc;
+    margin: 0;
+}
+
+p {
+    color: #777;
+    margin: 0;
+}
+
+#todo-app {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #97a9ba;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+#todo-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    overflow-y: auto;
+    height: 300px;
+}
+
+.input-container {
+    display: flex;
+    width: 100%;
+    /* margin-top: 20px; */
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#todo-input {
+    
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex-grow: 1;
+    width: 100%;
+    margin-right: 8px; /* Ensure some space between the input and the button */
+}
+
+#add-todo-btn {
+    padding: 8px 16px;
+    background-color: #ffa500;
+    border: none;
+    width: max-content;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#add-todo-btn:hover {
+    background-color: #ff9100;
+}
+
+li {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    font-size: larger;
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: #000000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+}
+li p{
+    color: #1e1f1f;
+}
+li:hover {
+    transform: scale(1.01);/* Slightly increase the size */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for a "lifting off" impression */
+}
+
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 5px;
+    transition: color 0.1s ease, transform 0.1s ease;
+    
+}
+
+button:hover {
+    transform: scale(1.1);
+    color: #ff3b30;
+}
+
+/* Scrollbar styling */
+#todo-list::-webkit-scrollbar {
+    width: 8px; /* Scrollbar width */
+    margin: auto 2px;
+}
+
+#todo-list::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track color */
+    border-radius: 10px;
+}
+
+#todo-list::-webkit-scrollbar-thumb {
+    background: #888; /* Handle color */
+    border-radius: 10px;
+}
+
+#todo-list::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Handle color on hover */
+}
+
